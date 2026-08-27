@@ -1,4 +1,4 @@
-# 🔌 Embedded_Project_Repo
+# 🔌 Embedded_Project_Repo (STILL UNDER PROGRESS)
 
 > A structured embedded systems project repository covering foundational communication protocols — **UART, I2C, and SPI** — implemented in **C/C++** from the ground up.
 
