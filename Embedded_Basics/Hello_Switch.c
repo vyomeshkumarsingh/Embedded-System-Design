@@ -11,11 +11,14 @@ int main(void)
     P1DIR & = ~SW; // Set P1.3 as input (switch)
     P1DIR |= LED; // Set P1.7 as output (LED)
 
-    if(!(P1IN & SW) ) 
-    { 
-        while(!(P1IN & SW)) ;
+    while(1)
+    {
+        if(!(P1IN & SW) ) 
+        { 
+            while(!(P1IN & SW)) ;
 
-        P1OUT ^= LED; // Toggle LED
+            P1OUT ^= LED; // Toggle LED
+        }
     }
 
     return 0;

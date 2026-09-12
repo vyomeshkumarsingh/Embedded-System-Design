@@ -1,0 +1,7 @@
+{
+    "C_Cpp.autocomplete": "Disabled",
+    "[c]": {
+        "editor.quickSuggestions": false,
+        "editor.suggestOnTriggerCharacters": false
+    }
+}
