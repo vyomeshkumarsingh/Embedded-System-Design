@@ -18,10 +18,10 @@ void switch_input()
                 _delay_cycles(20000);
 
                 BCSCTL2 &= ~(BIT5 + BIT4); // selecting the  VLO as clock source
-                BCSCTL2 |= (BIT5 + BIT4);
+                BCSCTL2 |= (BIT5 + BIT4); // selecting as 12KHz/8= 1.5KHz
         }
 
-        if (!(PIN & SW2))
+        if (!(P1IN & SW2))
         {
                 _delay_cycles(20000);
                 while (!(P1IN & SW2))
